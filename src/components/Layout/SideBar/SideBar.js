@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { hide } from '../../../features/counter/counterMenu';
-import useClickOutSide from '../../../hooks/useClickOutSide';
+import useClickOutSide from '../../hooks/useClickOutSide';
 import Button from '../../Button/Button';
 
 import classNames from 'classnames/bind';

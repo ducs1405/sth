@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 
-import useClickOutSide from '../../../hooks/useClickOutSide';
+import useClickOutSide from '../../hooks/useClickOutSide';
 import Popper from '../Popper/Popper';
 
 import { CartIcon } from '../../Icon/Icon';

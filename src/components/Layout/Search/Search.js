@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 
 // import useDebounce from '../../../hooks/useDebounce';
-import useClickOutSide from '../../../hooks/useClickOutSide';
+import useClickOutSide from '../../hooks/useClickOutSide';
 
 import { SearchIcon } from '../../Icon/Icon';
 import Popper from '../Popper/Popper';

@@ -1,0 +1,34 @@
+.cart {
+    position: relative;
+    width: var(--icon-width);
+    height: var(--icon-height);
+
+    .popper-outer {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+    }
+}
+
+.cart-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 9px;
+}
+
+.cart-number {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 18px;
+    height: 18px;
+    padding: 1px 5px;
+    border-radius: 999px;
+    background-color: red;
+}
+
+.number {
+    font-size: var(--text-font-size-default);
+    color: #fff;
+}

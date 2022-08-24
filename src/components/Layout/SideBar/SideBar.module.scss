@@ -1,0 +1,40 @@
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 250px;
+    transition: all 0.3s ease 0s;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ebebeb;
+}
+
+.side-inner {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-ele {
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    background-color: inherit;
+    border: none;
+    color: #262626;
+
+    &:hover {
+        background-color: #262626;
+        color: #f8f8f8;
+        padding-left: 40px;
+        border: 1px solid #ebebeb;
+    }
+}
+
+.side-title {
+    display: block;
+    line-height: 40px;
+    font-size: var(--text-font-size-element);
+    font-weight: 600;
+}

@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 60px;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #f8f8f8;
+}
+
+.warpper {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-icon,
+.user-icon,
+.like-icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+.user-icon,
+.like-icon {
+    padding: 9px;
+}
+
+.cart-outer {
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+.logo {
+    padding: 0px 20px;
+}
+
+.logo-img {
+    font-size: 3.2rem;
+}
+
+.center {
+    flex: 1 1;
+    max-width: 520px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

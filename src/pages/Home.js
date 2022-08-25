@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-import Slide from '../components/Layout/Slide/Slide';
-import Button from '../components/Button/Button';
-import SlideItem from '../components/Layout/SlideItem/SlideItem';
+// import Slide from '../components/Layout/Slide/Slide';
+// import Button from '../components/Button/Button';
+import Grid from '../components/Layout/Grid/Grid';
 
 const cx = classNames.bind(styles);
 
@@ -47,12 +47,82 @@ const products = [
         images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/269/956/B0021C6F6S.01._SS1500_SCRMZZZZZZ___51260_zoom__20379.1513823929.jpg?c=2',
         price: '140$',
     },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
+    {
+        name: 'dimond lighting',
+        images: 'https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/210x280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2',
+        price: '112$',
+    },
 ];
 
 function Home() {
     return (
         <div className={cx('home')}>
-            <Slide />
+            {/* <Slide />
             <div className={cx('shop')}>
                 <div className={cx('shop-title')}>
                     <h2>SHOP BY</h2>
@@ -80,9 +150,8 @@ function Home() {
                         />
                     </Button>
                 </div>
-            </div>
-            <SlideItem title={'Men shop'} more={true} props={products} />
-            <SlideItem title={'Woman shop'} more={true} props={products} />
+            </div> */}
+            <Grid data={products} />
         </div>
     );
 }

@@ -6,30 +6,26 @@ import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-function Item({ children }) {
+function Item({ data, style }) {
     const [like, setLike] = useState(false);
 
     const handleLike = () => {
         setLike(like ? false : true);
     };
 
-    const handleAddCart = () => console.log('c');
-
-    const handleGoItem = () => console.log('b');
-
     return (
-        <div className={cx('item')}>
-            <Button className={cx('item-btn')} onClick={handleGoItem} to={'/ad'}>
+        <div className={cx('item')} style={style}>
+            <Button className={cx('item-btn')} to={'/ad'}>
                 <div className={cx('item-inner')}>
                     <div className={cx('item-infor')}>
                         <div
                             className={cx('item-bg')}
-                            style={{ backgroundImage: `url(${children.images})` }}
+                            style={{ backgroundImage: `url(${data.images})` }}
                         ></div>
                         <div className={cx('item-discreption')}>
-                            <span className={cx('item-name')}>{children.name}</span>
-                            <span className={cx('item-brand')}>{children.name}</span>
-                            <span className={cx('item-price')}>{children.price}</span>
+                            <span className={cx('item-name')}>{data.name}</span>
+                            <span className={cx('item-brand')}>{data.name}</span>
+                            <span className={cx('item-price')}>{data.price}</span>
                         </div>
                     </div>
                 </div>
@@ -43,7 +39,7 @@ function Item({ children }) {
                     </Button>
                 </div>
                 <div className={cx('add-cart')}>
-                    <Button className={cx('action-btn')} onClick={handleAddCart}>
+                    <Button className={cx('action-btn')}>
                         <div className={cx('icon')}>
                             <AddCart />
                         </div>

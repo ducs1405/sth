@@ -8,9 +8,7 @@ const cx = classNames.bind(styles);
 
 function Grid({ data, numberi }) {
     const grid = useRef();
-
-    const width = useViewPort(grid);
-
+    var width = useViewPort(grid);
     const number = Math.floor(width / 230);
 
     var slice = 0;
@@ -19,7 +17,7 @@ function Grid({ data, numberi }) {
     else slice = number;
 
     return (
-        <div className={cx('grids')}>
+        <div className={cx('grid')}>
             <div className={cx('grid-inner')} ref={grid}>
                 <div className={cx('grid-items')}>
                     {data.slice(0, slice).map((e, index) => (

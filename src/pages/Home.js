@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-// import Slide from '../components/Layout/Slide/Slide';
-// import Button from '../components/Button/Button';
+import Slide from '../components/Layout/Slide/Slide';
+import Button from '../components/Button/Button';
 import Grid from '../components/Layout/Grid/Grid';
 
 const cx = classNames.bind(styles);
@@ -122,7 +122,7 @@ const products = [
 function Home() {
     return (
         <div className={cx('home')}>
-            {/* <Slide />
+            <Slide />
             <div className={cx('shop')}>
                 <div className={cx('shop-title')}>
                     <h2>SHOP BY</h2>
@@ -150,7 +150,7 @@ function Home() {
                         />
                     </Button>
                 </div>
-            </div> */}
+            </div>
             <Grid data={products} />
         </div>
     );

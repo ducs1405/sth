@@ -6,7 +6,7 @@ const useViewPort = (ref) => {
 
     useEffect(() => {
         const handleWindowResize = () =>
-            setTimeout(() => setWidth(ref.current.offsetWidth), 700);
+            setTimeout(() => setWidth(ref.current.offsetWidth), 300);
         window.addEventListener('resize', handleWindowResize);
         return () => window.removeEventListener('resize', handleWindowResize);
         // eslint-disable-next-line react-hooks/exhaustive-deps

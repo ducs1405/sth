@@ -151,7 +151,18 @@ function Home() {
                     </Button>
                 </div>
             </div>
-            <Grid data={products} />
+            <div className={cx('feature')}>
+                <div className={cx('feature-title')}>
+                    <span className="title-span">Featured Products</span>
+                    <Grid data={products} />
+                </div>
+            </div>
+            <div className={cx('sell')}>
+                <div className={cx('sell-title')}>
+                    <span className="title-span">Top Sellers</span>
+                    <Grid data={products} />
+                </div>
+            </div>
         </div>
     );
 }

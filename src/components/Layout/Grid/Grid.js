@@ -13,6 +13,8 @@ function Grid({ data, numberi }) {
 
     var slice = 0;
 
+    console.log(width);
+
     if (numberi) slice = numberi;
     else slice = number;
 

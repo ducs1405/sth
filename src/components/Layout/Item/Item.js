@@ -2,17 +2,10 @@ import classNames from 'classnames/bind';
 import { AddCart, LikedIcon, LikeIcon } from '../../Icon/Icon';
 import styles from './Item.module.scss';
 import Button from '../../Button/Button';
-import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function Item({ data, style }) {
-    const [like, setLike] = useState(false);
-
-    const handleLike = () => {
-        setLike(like ? false : true);
-    };
-
     return (
         <div className={cx('item')} style={style}>
             <Button className={cx('item-btn')} to={'/ad'}>
@@ -32,9 +25,9 @@ function Item({ data, style }) {
             </Button>
             <div className={cx('action')}>
                 <div className={cx('like')}>
-                    <Button className={cx('action-btn')} onClick={handleLike}>
+                    <Button className={cx('action-btn')}>
                         <div className={cx('icon', 'like-icon')}>
-                            {like ? <LikedIcon /> : <LikeIcon />}
+                            {true ? <LikedIcon /> : <LikeIcon />}
                         </div>
                     </Button>
                 </div>

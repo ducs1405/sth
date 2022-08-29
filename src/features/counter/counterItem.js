@@ -6,15 +6,15 @@ export const counterItem = createSlice({
         value: [],
     },
     reducers: {
-        like: (state) => {
-            state.value += true;
+        decrement: (state, action) => {
+            state.value -= action.payload;
         },
-        dislike: (state) => {
-            state.value -= false;
+        increment: (state, action) => {
+            state.value += action.payload;
         },
     },
 });
 
-export const { like, dislike } = counterItem.actions;
+export const { decrement, increment } = counterItem.actions;
 
 export default counterItem.reducer;

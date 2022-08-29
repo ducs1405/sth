@@ -56,3 +56,15 @@
 .shop-img {
     width: 100%;
 }
+
+.feature,
+.sell {
+    padding: 20px;
+}
+
+.feature-title,
+.sell-title {
+    font-size: var(--text-font-size-element);
+    font-weight: 600;
+    line-height: 30px;
+}

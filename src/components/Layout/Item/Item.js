@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 function Item({ data, style }) {
     return (
         <div className={cx('item')} style={style}>
-            <Button className={cx('item-btn')} to={'/ad'}>
+            <Button className={cx('item-btn')} to={`/product/${data.name}`}>
                 <div className={cx('item-inner')}>
                     <div className={cx('item-infor')}>
                         <div

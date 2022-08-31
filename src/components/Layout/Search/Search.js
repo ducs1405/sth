@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 
-// import useDebounce from '../../../hooks/useDebounce';
+import useDebounce from '../../hooks/useDebounce';
 import useClickOutSide from '../../hooks/useClickOutSide';
 
 import { SearchIcon } from '../../Icon/Icon';
@@ -14,8 +14,9 @@ const cx = classNames.bind(styles);
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [show, setShow] = useState(false);
+    const debounced = useDebounce(searchValue, 500);
 
-    // const debouncedValue = useDebounce(searchValue, 500);
+    useEffect(() => {}, [debounced]);
 
     const handleClose = () => {
         setShow(false);

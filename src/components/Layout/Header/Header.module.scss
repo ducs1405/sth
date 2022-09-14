@@ -6,7 +6,8 @@
     z-index: 99;
     height: 60px;
     border-bottom: 1px solid #ebebeb;
-    background-color: #f8f8f8;
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0 rgba(210, 217, 237, 0.3);
 }
 
 .warpper {
@@ -27,10 +28,6 @@
 .like-icon {
     width: var(--icon-width);
     height: var(--icon-height);
-}
-
-.user-icon,
-.like-icon {
     padding: 9px;
 }
 

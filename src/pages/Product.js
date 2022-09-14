@@ -7,6 +7,7 @@ import styles from './Product.module.scss';
 const cx = classNames.bind(styles);
 
 function Product() {
+    console.log('1');
     const [color, setColor] = useState('');
     const [size, setSize] = useState('');
     const [quantity, setQuantity] = useState(1);
@@ -31,26 +32,13 @@ function Product() {
                         src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
                     />
                     <div className={cx('image-slide')}>
-                        <img
-                            alt=""
-                            className={cx('images-chill')}
-                            src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
-                        />
-                        <img
-                            alt=""
-                            className={cx('images-chill')}
-                            src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
-                        />
-                        <img
-                            alt=""
-                            className={cx('images-chill')}
-                            src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
-                        />
-                        <img
-                            alt=""
-                            className={cx('images-chill')}
-                            src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
-                        />
+                        <Button className={cx('images-chill')}>
+                            <img
+                                className={cx('imgs')}
+                                alt=""
+                                src="https://cdn11.bigcommerce.com/s-c1ckj7z8/images/stencil/1280x1280/products/279/879/adidas_ambition_pb_Black_Yellow__17486.1513823426.jpg?c=2"
+                            />
+                        </Button>
                     </div>
                 </div>
                 <div className={cx('details')}>
@@ -106,6 +94,9 @@ function Product() {
                         </div>
                     </div>
                     <div className={cx('item-price')}>5000$</div>
+                    <div className={cx('add-cart')}>
+                        <Button className={cx('add-btn')}>Add to cart</Button>
+                    </div>
                 </div>
             </div>
             <div className={cx('description')}>

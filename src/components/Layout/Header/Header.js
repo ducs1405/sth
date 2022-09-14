@@ -1,8 +1,7 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import { LikeIcon, UserIcon } from '../../Icon/Icon';
+import { LikeIcon, MenuIcon, UserIcon } from '../../Icon/Icon';
 import Cart from '../Cart/Cart';
-import Menu from '../Menu/Menu';
 import Search from '../Search/Search';
 import styles from './Header.module.scss';
 
@@ -14,7 +13,7 @@ function Header() {
             <div className={cx('warpper')}>
                 <div className={cx('left')}>
                     <div className={cx('menu-icon')}>
-                        <Menu />
+                        <MenuIcon />
                     </div>
                     <div className={cx('logo')}>
                         <Link to={'/'}>

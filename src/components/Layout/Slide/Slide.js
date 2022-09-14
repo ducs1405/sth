@@ -10,17 +10,17 @@ const slides = [
     {
         title: '0',
         desceription: 'Sale 75% discount',
-        img: 'https://cdn11.bigcommerce.com/s-fcn1lgnyqp/images/stencil/original/carousel/6/slide01.jpg?c=2',
+        img: 'http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg',
     },
     {
         title: '1',
         desceription: 'Sale 75% discount',
-        img: 'https://cdn11.bigcommerce.com/s-fcn1lgnyqp/images/stencil/original/carousel/8/slide03.jpg?c=2',
+        img: 'http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg',
     },
     {
         title: '2',
         desceription: 'Sale 75% discount',
-        img: '"https://cdn11.bigcommerce.com/s-fcn1lgnyqp/images/stencil/original/carousel/7/slide02.jpg?c=2"',
+        img: 'http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg',
     },
 ];
 

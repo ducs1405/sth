@@ -6,7 +6,7 @@ import styles from './Grid.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Grid({ data, numberi }) {
+function Grid({ data }) {
     const grid = useRef();
     var width = useViewPort(grid);
     const number = Math.floor(width / 230);
@@ -14,9 +14,6 @@ function Grid({ data, numberi }) {
     var slice = 0;
 
     console.log(width);
-
-    if (numberi) slice = numberi;
-    else slice = number;
 
     return (
         <div className={cx('grid')} ref={grid}>
